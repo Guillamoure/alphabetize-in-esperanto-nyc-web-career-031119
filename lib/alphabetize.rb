@@ -1,6 +1,7 @@
 def alphabetize(arr)
   # code here
   esp = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  new_array = arr.sort { |a, b| a <=> b}
+  ascii = "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\"
+  new_array = arr.sort { |word| word.tr(esp, ascii)}
   return new_array
 end
