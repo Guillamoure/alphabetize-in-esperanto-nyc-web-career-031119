@@ -1,6 +1,8 @@
+require 'pry'
 def alphabetize(arr)
   # code here
-  arr.tr('abcĉdefgĝhĥijĵklmnoprsŝtuŭvz', 'abcdefghijklmnopqrstuwxyz')
+  converted = arr.tr('abcĉdefgĝhĥijĵklmnoprsŝtuŭvz', 'abcdefghijklmnopqrstuwxyz')
+  binding.pry
   new_array = arr.sort { |word| abcdefghijklmnopqrstuwxyz}
   return new_array
 end
