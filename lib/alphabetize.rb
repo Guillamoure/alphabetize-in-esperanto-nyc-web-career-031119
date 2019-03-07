@@ -11,6 +11,7 @@ def alphabetize(arr)
   end
   
   converted_array = converted.sort
+  
   while i < converted_array.length
     new_array << converted_array[i].tr('ABabcdefghijklmnopqrstuvwxyz', 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz')
     i+=1
